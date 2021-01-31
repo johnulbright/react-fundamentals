@@ -49,3 +49,5 @@ var gerald=new BannedUser("Gerald");
 gerald.greet();
 gerald.status();
 gerald.warning();
+
+console.log(gerald.name)
