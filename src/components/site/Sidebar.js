@@ -7,6 +7,7 @@ import FunctionalComponentDemo from "../concepts/FunctionalComponentDemo";
 import JSXRules from "../concepts/JSXRules";
 import State from "../concepts/State";
 import Effects from "../concepts/Effects";
+import PropsDemo from "../concepts/PropsDemo";
 
 
 //import Pen from "./Codepen";
@@ -23,6 +24,7 @@ const Sidebar = () =>{
                 <li><Link to="/jsxrules"><Button>JSX Rules</Button></Link></li>
                 <li><Link to="/state"><Button>useState</Button></Link></li>
                 <li><Link to="/effects"><Button>useEffect</Button></Link></li>
+                <li><Link to="/propsdemo"><Button>PropsDemo</Button></Link></li>
                 <li><Link to="/codepen"><Button>Codepen (not working)</Button></Link></li>
                 <li><Link to="/resources"><Button>Resources</Button></Link></li>
 
@@ -36,6 +38,8 @@ const Sidebar = () =>{
                 <Route exact path="/jsxrules"><JSXRules /></Route>
                 <Route exact path="/state"><State /></Route>
                 <Route exact path="/effects"><Effects /></Route>
+                <Route exact path="/propsdemo"><PropsDemo /></Route>
+
                 <Route exact path="/functionalcomponent"><FunctionalComponentDemo /></Route>
                 {/**<Route exact path="/codepen"><Pen /></Route>*/}
 

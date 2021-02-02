@@ -21,8 +21,20 @@ const Effects=()=>{
 const SampleEffect=()=>{
     const [timerRunning,setTimerRunning]=useState(false);
     useEffect(()=>{
-        console.log("We initiated a change!")
+        let timer;
+        if(timerRunning){
+            timer=window.setTimeout(()=>{
+                console.log('the timer expired',Date.now()/1000);
+                setTimerRunning(false);
+            },2000);
+            console.log("We initiated a change!")
+        }
+        return ()=>{window.clearTimeout(timer);console.log('the timer was cleaned up',Date.now()/1000)};
     });
+
+    useEffect(()=>{
+        console.log('there was a state change and timedRunning is now',timerRunning);
+    })
     let buttonHandler=()=>{
         if(!timerRunning){
             setTimerRunning(true);
