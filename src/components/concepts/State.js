@@ -24,10 +24,18 @@ const State = () => {
 
 function StateExample() {
   const [text, setText] = useState("initial value");
+  const [likeNum, setLikeNum] = useState(0);
+  const [paraColor, setParaColor] = useState("blue");
+
+
 
   return (
     <div>
-      <input value={text} />
+      <input value={text} onChange={e=>setText(e.target.value)}/>
+      <br />
+      <img style={{width:'50px',height:'50px'}} src="https://upload.wikimedia.org/wikipedia/commons/1/13/Facebook_like_thumb.png" alt="This is a thumbs up icon" onClick={e=>setLikeNum(likeNum+1)}/>
+      <span>{likeNum}</span>
+      <p style={{color:paraColor}} onMouseOver={e=>setParaColor("red")} onMouseLeave={e=>setParaColor("blue")}>This should change color on hover</p>
     </div>
   );
 }

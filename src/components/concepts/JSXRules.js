@@ -29,7 +29,7 @@ const NormalComponent = () =>{
         <div style={{border:'2px solid black'}}>
             <h1>Normal Functional Component</h1>
             <p>This was constructed with JSX in the return.</p>
-            <img src="https://pbs.twimg.com/media/DOzL82mXkAA0zFs.jpg" />
+            <img src="https://pbs.twimg.com/media/DOzL82mXkAA0zFs.jpg" alt="This is a JSX"/>
         </div>
     )
 }
@@ -44,7 +44,7 @@ const CreateElementComponent = ()=>{
         },
         React.createElement("h1",null,"Another Functional Component"),
         React.createElement("p",null,"This was constructed  with CreateElement calls in the return."),
-        React.createElement("img",{src:"https://cdn-images-1.medium.com/max/1200/1*jJZHFQmhkq_7ohn18KrMhA.png"},null),
+        React.createElement("img",{src:"https://cdn-images-1.medium.com/max/1200/1*jJZHFQmhkq_7ohn18KrMhA.png",alt:'this is placeholder text'},null),
 
 
     );
