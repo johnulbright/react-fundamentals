@@ -8,6 +8,9 @@ import JSXRules from "../concepts/JSXRules";
 import State from "../concepts/State";
 import Effects from "../concepts/Effects";
 import PropsDemo from "../concepts/PropsDemo";
+import Hooks from "../concepts/Hooks";
+import TimePiecesApp from '../apps/timer-apps/TimePiecesApp.js;'
+
 
 
 //import Pen from "./Codepen";
@@ -25,8 +28,11 @@ const Sidebar = () =>{
                 <li><Link to="/state"><Button>useState</Button></Link></li>
                 <li><Link to="/effects"><Button>useEffect</Button></Link></li>
                 <li><Link to="/propsdemo"><Button>PropsDemo</Button></Link></li>
+                <li><Link to="/hooks"><Button>Hooks</Button></Link></li>
                 <li><Link to="/codepen"><Button>Codepen (not working)</Button></Link></li>
                 <li><Link to="/resources"><Button>Resources</Button></Link></li>
+                <li><Link to="/timer"><Button>Timers</Button></Link></li>
+
 
                 </ul>
             </div>
@@ -39,7 +45,8 @@ const Sidebar = () =>{
                 <Route exact path="/state"><State /></Route>
                 <Route exact path="/effects"><Effects /></Route>
                 <Route exact path="/propsdemo"><PropsDemo /></Route>
-
+                <Route exact path="/hooks"><Hooks /></Route>
+                <Route exact path="/timer"><TimePiecesApp /></Route>
                 <Route exact path="/functionalcomponent"><FunctionalComponentDemo /></Route>
                 {/**<Route exact path="/codepen"><Pen /></Route>*/}
 

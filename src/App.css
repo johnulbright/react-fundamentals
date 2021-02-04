@@ -28,7 +28,7 @@ footer  p {
   height: 100%;
   min-height: 100%;
 }
-Button{
+.sidebar-list Button{
   margin:10px;
   width:90%;
 }
