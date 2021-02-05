@@ -6,9 +6,9 @@ const PropsDemo=()=>{
     const [backgroundColor,setBackgroundColor]=useState("purple");
     const [borderRadius,setBorderRadius]=useState("5px");
     const [borderStyle,setBorderStyle]=useState("dashed");
-    const [display,setDisplay]=useState("inline-block");
-    const [width,setWidth]=useState("350px");
-    const [textAlign,setTextAlign]=useState("center");
+    const [display]=useState("inline-block");
+    const [width]=useState("350px");
+    const [textAlign]=useState("center");
     let styles={
         color:color,
         borderColor:"blue",

@@ -1,0 +1,43 @@
+import React,{useState,useEffect} from "react";
+
+//My code
+const TimerApp=()=>{
+    const [time,setTime]=useState(0);
+    useEffect(()=>{
+        setTimeout(()=>{
+            clearTimeout();
+            setTime(time+1)},
+            1000);
+        }
+        )
+    return(
+        <div>
+        <h1 className="section-title">React Timer</h1>
+        <p>You've been on this page for {time} seconds</p>
+        </div>
+    );
+};
+
+
+
+//Instructor code
+// const TimerApp = () => {
+//     const [secondsElapsed, setSecondsElapsed] = useState(0);
+//     useEffect(() => {
+//         let interval = setInterval(() => tick(), 1000);
+//         return () => clearInterval(interval);
+//     })
+   
+//     const tick = () => setSecondsElapsed(secondsElapsed + 1);
+//     return (
+//         <div>
+//             <h1 className="section-title">React Timer</h1>
+//             <div>Seconds Elapsed: {secondsElapsed}</div>
+//         </div>
+//     )
+// }
+
+
+
+
+export default TimerApp;

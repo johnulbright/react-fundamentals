@@ -7,7 +7,7 @@ import {
   CardSubtitle,
   Button,
 } from "reactstrap";
-import { Link} from 'react-router-dom';
+//import { Link} from 'react-router-dom';
 
 
 const FunctionalComponentDemo = () => {
@@ -64,7 +64,7 @@ function NoArrowSyntax() {
           <CardText>
             This functional component doesn't use Arrow Syntax
           </CardText>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions" target="_blank"><Button>Learn more!</Button></a>
+          <a rel="noopener noreferrer" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions" target="_blank"><Button>Learn more!</Button></a>
         </CardBody>
       </Card>
     </div>
@@ -84,7 +84,7 @@ const ArrowSyntax = () => {
           <CardText>
             This functional component does use Arrow Syntax
           </CardText>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#arrow_functions" target="_blank"><Button>Learn more!</Button></a>
+          <a rel="noopener noreferrer" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#arrow_functions" target="_blank"><Button>Learn more!</Button></a>
         </CardBody>
       </Card>
   

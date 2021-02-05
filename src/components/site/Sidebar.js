@@ -9,7 +9,7 @@ import State from "../concepts/State";
 import Effects from "../concepts/Effects";
 import PropsDemo from "../concepts/PropsDemo";
 import Hooks from "../concepts/Hooks";
-import TimePiecesApp from '../apps/timer-apps/TimePiecesApp.js;'
+import TimePiecesApp from '../apps/timer-apps/TimePiecesApp';
 
 
 

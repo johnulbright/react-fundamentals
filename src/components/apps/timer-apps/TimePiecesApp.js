@@ -11,7 +11,7 @@ const TimePiecesApp=()=>{
                 <hr/>
                 <ClockApp/>
                 <hr/>
-                <StopWatchApp/>
+                <StopWatchApp/> 
             </div>
         </div>
     )
