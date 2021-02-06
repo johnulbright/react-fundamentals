@@ -10,6 +10,9 @@ import Effects from "../concepts/Effects";
 import PropsDemo from "../concepts/PropsDemo";
 import Hooks from "../concepts/Hooks";
 import TimePiecesApp from '../apps/timer-apps/TimePiecesApp';
+import NytApp from '../apps/nyt-app/NytApp';
+import MovieApp from '../apps/the-movie-db/MovieApp';
+
 
 
 
@@ -32,6 +35,9 @@ const Sidebar = () =>{
                 <li><Link to="/codepen"><Button>Codepen (not working)</Button></Link></li>
                 <li><Link to="/resources"><Button>Resources</Button></Link></li>
                 <li><Link to="/timer"><Button>Timers</Button></Link></li>
+                <li><Link to="/nytapp"><Button>NYT App</Button></Link></li>
+                <li><Link to="/movieapp"><Button>Movie App</Button></Link></li>
+
 
 
                 </ul>
@@ -47,6 +53,9 @@ const Sidebar = () =>{
                 <Route exact path="/propsdemo"><PropsDemo /></Route>
                 <Route exact path="/hooks"><Hooks /></Route>
                 <Route exact path="/timer"><TimePiecesApp /></Route>
+                <Route exact path="/nytapp"><NytApp /></Route>
+                <Route exact path="/movieapp"><MovieApp /></Route>
+
                 <Route exact path="/functionalcomponent"><FunctionalComponentDemo /></Route>
                 {/**<Route exact path="/codepen"><Pen /></Route>*/}
 
